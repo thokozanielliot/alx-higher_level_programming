@@ -1,7 +1,8 @@
 # 0x00 Python - Hello, World
 
 ## Tasks
-
+|Tasks| Description                                                                                                                          |
+|-----|--------------------------------------------------------------------------------------------------------------------------------------| 
 |0| write ashell scrpt that runs a Python script|
 |1| Write a shell scrirpt that runs a python code|
 |2| Write a Python script that prints exactly"Programming is like building a multilingual puzzle, followed by a new line.|
