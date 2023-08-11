@@ -10,7 +10,7 @@ if __name__ == "__main__":
     if argv[2] not in list(op.keys()):
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
-    
+
     a = int(argv[1])
     b = int(argv[3])
     print("{} {} {} = {}".format(a, argv[2], b, op[argv[2]](a, b)))
