@@ -5,10 +5,9 @@
 class Node:
     """Represent a node in a singly-linked list"""
 
-
     def __init__(self, data, next_node=None):
         """Initialize a new Node
-        
+
         Args:
             data (int): Data of Node
             next_node (Node): Node of the next new Node
@@ -41,7 +40,6 @@ class Node:
 
 class SinglyLinkedList:
     """Represent a singly-linked list"""
-
 
     def __str__(self):
         """Define print() representation of singly linked list"""

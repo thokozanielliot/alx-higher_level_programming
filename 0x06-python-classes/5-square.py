@@ -32,7 +32,7 @@ class Square:
     @size.setter
     def size(self, value):
         """ Method to set the size value of the square object
-        
+
         Args:
             value (int): Value of size
         """

@@ -7,10 +7,9 @@ class MagicClass:
     Class that stores the properties of a circumference
     """
 
-
     def __init__(self, radius=0):
         """Initialize a MagicClass
-        
+
         Args:
             radius (float or int): Radius of a circle"""
         self.__radius = 0
