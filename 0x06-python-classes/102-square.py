@@ -1,27 +1,41 @@
 #!/usr/bin/python3
+"""Define a class Square"""
+
+
 class Square:
     """ A class that defines a square by its size
     """
+
+
     def __eq__(self, other):
+        """Define the == comparison to a Square"""
         return self.__size == other.__size
 
     def __lt__(self, other):
+        """Define the <comparison to a Square"""
         return self.__size < other.__size
 
     def __le__(self, other):
+        """Define the <= comparison to a Square"""
         return self.__size <= other.__size
 
     def __ne__(self, other):
+        """Define the != comparison to a Square"""
         return self.__size != other.__size
 
     def __gt__(self, other):
+        """Define > comparison to a Square"""
         return self.__size > other.__size
 
     def __ge__(self, other):
+        "Define the >= comparison to a Square"
         return self.__size >= other.__size
 
     def __init__(self, size=0):
         """ Method to initialize the square object
+
+        Args:
+            size (int): Size of Square
         """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
