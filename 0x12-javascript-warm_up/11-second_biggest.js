@@ -1,19 +1,8 @@
 #!/usr/bin/node
-let biggest = 0;
-let i;
-const arrNumbers = [];
-
-for (i =2; i < process.argv.length; i++) {
-    if (Number.isNaN(parseInt(process.argv[i]) === false)) {
-        arrNumbers[i - 2] = parseInt(process.argv[i]);
-    }
+if (process.argv.length <= 3) {
+  console.log('0');
+} else {
+  const arr = process.argv.slice(2).map(Number);
+  const second = arr.sort(function (a, b) { return b - a; })[1];
+  console.log(second);
 }
-
-if (arrNumbers.length > 1) {
-    biggest = Math.max.apply(null, arrNumbers);
-    i = arrNumbers.indexOf(biggest);
-    arrNumbers[i] = -Infinity;
-    biggest = Math.max.apply(null, arrNumbers);
-}
-
-console.log(biggest);
